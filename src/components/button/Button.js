@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withErrorBoundary } from "react-error-boundary";
 import ErrorComponent from "components/common/ErrorComponent";
+import classNames from "utils/classNames";
 
 const Button = ({
   type = "button",
@@ -17,9 +18,11 @@ const Button = ({
   );
   return (
     <button
-      className={`p-4 text-base font-semibold rounded-xl flex justify-center items-center text-white min-h-[56px] ${
-        !!isLoading ? "opacity-50 pointer-events-none" : ""
-      } ${className}`}
+      className={classNames(
+        "p-4 text-base font-semibold rounded-xl flex justify-center items-center text-white min-h-[56px]",
+        !!isLoading ? "opacity-50 pointer-events-none" : "",
+        className
+      )}
       type="type"
       {...rest}
     >
