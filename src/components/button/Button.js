@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { withErrorBoundary } from "react-error-boundary";
+import ErrorComponent from "components/common/ErrorComponent";
 
 const Button = ({
   type = "button",
@@ -33,4 +35,6 @@ Button.propTypes = {
   isLoading: PropTypes.bool,
 };
 
-export default Button;
+export default withErrorBoundary(Button, {
+  FallbackComponent: ErrorComponent,
+});

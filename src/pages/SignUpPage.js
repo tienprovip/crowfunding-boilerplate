@@ -9,7 +9,7 @@ import { Label } from "components/label";
 import { Input } from "components/input";
 import { IconEyeToggle } from "components/icons";
 import { Checkbox } from "components/checkbox";
-import { Button } from "components/button";
+import { Button, ButtonGoogle } from "components/button";
 
 const schema = yup.object({
   name: yup.string().required("This field is required"),
@@ -48,12 +48,7 @@ const SignUpPage = () => {
           Sign in
         </Link>
       </p>
-      <button className="flex items-center justify-center w-full py-4 mb-5 border rounded-lg gap-x-3 border-strock dark:border-darkStroke">
-        <img src="./Google.png" alt="icon-google" />
-        <span className="text-base font-semibold text-text2 dark:text-white">
-          Sign up with google
-        </span>
-      </button>
+      <ButtonGoogle></ButtonGoogle>
       <p className="mb-4 text-xs font-normal text-center lg:text-sm text-text2 lg:mb-8 dark:text-white">
         Or sign up with email
       </p>
