@@ -11,13 +11,13 @@ const LayoutAuthentication = (props) => {
       <img
         src="/ellipse.png"
         alt="bgEllipse"
-        className="hidden lg:block pointer-events-none absolute bottom-0 left-0 right-0 z-[-1] w-full"
+        className="hidden md:block pointer-events-none absolute bottom-0 left-0 right-0 z-[-1] w-full"
       />
-      <Link to="/" className="inline-block mb-5 lg:mb-16">
+      <Link to="/" className="inline-block mb-5 md:mb-16">
         <img srcSet="/logo.png" alt="crowfunding-app" />
       </Link>
-      <div className="w-full max-w-[556px] bg-white dark:bg-darkSecondary rounded-xl px-5 py-8 lg:px-16 lg:py-12 mx-auto">
-        <h1 className="mb-1 text-lg font-semibold text-center lg:text-xl lg:mb-3 text-text1 dark:text-white">
+      <div className="w-full max-w-[556px] bg-white dark:bg-darkSecondary rounded-xl px-5 py-8 md:px-16 md:py-12 mx-auto">
+        <h1 className="mb-1 text-lg font-semibold text-center md:text-xl md:mb-3 text-text1 dark:text-white">
           {heading}
         </h1>
         {children}

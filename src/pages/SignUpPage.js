@@ -42,14 +42,14 @@ const SignUpPage = () => {
 
   return (
     <LayoutAuthentication heading="Sing Up">
-      <p className="mb-6 text-xs font-normal font-medium text-center lg:text-sm text-text3 lg:mb-8">
+      <p className="mb-6 text-xs font-normal font-medium text-center md:text-sm text-text3 md:mb-8">
         Already have an account?{" "}
         <Link to="/sign-in" className="font-medium underline text-primary">
           Sign in
         </Link>
       </p>
       <ButtonGoogle></ButtonGoogle>
-      <p className="mb-4 text-xs font-normal text-center lg:text-sm text-text2 lg:mb-8 dark:text-white">
+      <p className="mb-4 text-xs font-normal text-center md:text-sm text-text2 md:mb-8 dark:text-white">
         Or sign up with email
       </p>
       <form onSubmit={handleSubmit(handleSignUp)}>
@@ -93,7 +93,7 @@ const SignUpPage = () => {
             checked={acceptTerm}
             onClick={handleToggleTerm}
           ></Checkbox>
-          <span className="flex-1 text-xs text-text2 lg:text-sm dark:text-text3">
+          <span className="flex-1 text-xs text-text2 md:text-sm dark:text-text3">
             I agree to the{" "}
             <Link className="underline text-secondary">Terms of Use</Link> and
             have read and understand the{" "}

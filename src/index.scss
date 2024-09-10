@@ -13,3 +13,7 @@
 input:focus + .error-input{
   display: none;
 }
+
+.sidebar a.active{
+  @apply bg-primary text-primary bg-opacity-20
+}
