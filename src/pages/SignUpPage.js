@@ -100,7 +100,7 @@ const SignUpPage = () => {
             <Link className="underline text-secondary">Privacy policy.</Link>
           </span>
         </div>
-        <Button className="w-full bg-primary" type="submit">
+        <Button className="w-full" kind="primary" type="submit">
           Create my account
         </Button>
       </form>
